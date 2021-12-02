@@ -4,9 +4,61 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">เพิ่มเอกสาร</h2>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">เพิ่มเอกสารที่ยื่นขอ มอก.</h2>
                         <p class="wow fadeInUp" data-wow-delay=".6s"></p>
-                        <div class="  tab-content font">
+                      
+<script>
+function add_row() {
+    var table = document.getElementById("myTable");
+    count_rows = table.getElementsByTagName("tr").length;
+
+    var row = table.insertRow(count_rows);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    var cell4 = row.insertCell(3);
+    var cell5 = row.insertCell(4);
+    var cell6 = row.insertCell(5);
+    var cell7 = row.insertCell(6);
+    var cell8 = row.insertCell(7);
+    var cell9 = row.insertCell(8);
+    var cell10 = row.insertCell(9);
+    var cell11 = row.insertCell(10);
+    var cell12 = row.insertCell(11);
+<?php $i=1; ?>
+    cell1.innerHTML = "<input type='text'   "+count_rows+" value='<?= $i++?>'>";
+    cell2.innerHTML = "<input type='text' name='standard_meet'"+count_rows+" value>";
+    cell3.innerHTML = "<input type='text' name='standard_number'"+count_rows+" value>";
+    cell4.innerHTML = "<input type='text' name='txtB'"+count_rows+" value>";
+    cell5.innerHTML = "<input type='text' name='txtB'"+count_rows+" value>";
+    cell6.innerHTML = "<textarea type='text' name='standard_detail'"+count_rows+" value></textarea>";
+    cell7.innerHTML = "<input type='text' name='txtB'"+count_rows+" value>";
+    cell8.innerHTML = "<input type='text' name='standard_mandatory'"+count_rows+" value>";
+    cell9.innerHTML = "<input type='text' name='txtB'"+count_rows+" value>";
+    cell10.innerHTML = "<input type='text' name='standard_tracking'"+count_rows+" value>";
+    cell11.innerHTML = "<input type='text' name='standard_note'"+count_rows+" value>";
+    cell12.innerHTML = "<input type='file' name='txtB'"+count_rows+" value>";
+}
+
+
+function del_row(){
+    var table = document.getElementById("myTable");
+    count_rows = table.getElementsByTagName("tr").length;
+    document.getElementById("myTable").deleteRow(count_rows-1);
+}
+</script>
+
+
+
+
+            
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="  tab-content font">
         <div id="home" class="container-fluid tab-pane active m-2">
         <form method="post">
             <table class="table table-responsive text-center pt-5"  id="myTable">
@@ -84,57 +136,5 @@
         </form>
     </div>
 </div>
-<script>
-function add_row() {
-    var table = document.getElementById("myTable");
-    count_rows = table.getElementsByTagName("tr").length;
 
-    var row = table.insertRow(count_rows);
-    var cell1 = row.insertCell(0);
-    var cell2 = row.insertCell(1);
-    var cell3 = row.insertCell(2);
-    var cell4 = row.insertCell(3);
-    var cell5 = row.insertCell(4);
-    var cell6 = row.insertCell(5);
-    var cell7 = row.insertCell(6);
-    var cell8 = row.insertCell(7);
-    var cell9 = row.insertCell(8);
-    var cell10 = row.insertCell(9);
-    var cell11 = row.insertCell(10);
-    var cell12 = row.insertCell(11);
-<?php $i=1; ?>
-    cell1.innerHTML = "<input type='text'   "+count_rows+" value='<?= $i++?>'>";
-    cell2.innerHTML = "<input type='text' name='standard_meet'"+count_rows+" value>";
-    cell3.innerHTML = "<input type='text' name='standard_number'"+count_rows+" value>";
-    cell4.innerHTML = "<input type='text' name='txtB'"+count_rows+" value>";
-    cell5.innerHTML = "<input type='text' name='txtB'"+count_rows+" value>";
-    cell6.innerHTML = "<textarea type='text' name='standard_detail'"+count_rows+" value></textarea>";
-    cell7.innerHTML = "<input type='text' name='txtB'"+count_rows+" value>";
-    cell8.innerHTML = "<input type='text' name='standard_mandatory'"+count_rows+" value>";
-    cell9.innerHTML = "<input type='text' name='txtB'"+count_rows+" value>";
-    cell10.innerHTML = "<input type='text' name='standard_tracking'"+count_rows+" value>";
-    cell11.innerHTML = "<input type='text' name='standard_note'"+count_rows+" value>";
-    cell12.innerHTML = "<input type='file' name='txtB'"+count_rows+" value>";
-}
-
-
-function del_row(){
-    var table = document.getElementById("myTable");
-    count_rows = table.getElementsByTagName("tr").length;
-    document.getElementById("myTable").deleteRow(count_rows-1);
-}
-</script>
-
-
-
-
-            </div>
-                </div>
-            </div>
-            
-                   
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>

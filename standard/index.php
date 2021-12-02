@@ -1,3 +1,4 @@
+  
   <!-- Start Items Grid Area -->
   <section class="items-grid section custom-padding">
         <div class="">
@@ -6,7 +7,14 @@
                     <div class="section-title">
                         <h2 class="wow fadeInUp" data-wow-delay=".4s">เอกสารทั้งหมด</h2>
                         <p class="wow fadeInUp" data-wow-delay=".6s"></p>
-                        <div class="  tab-content font">
+    
+            
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="  tab-content font">
         <div id="home" class="container-fluid tab-pane active m-2">
             <!-- <div class="border rounded-2 border-2 bg-info text-white ">
                 <h1 class="mg-t ">เอกสารที่ยื่นขอ มอก. ทั้งหมด</h1>
@@ -68,11 +76,5 @@
                     </div>
                 </div>
             </div>
-            
-                   
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <!-- /End Items Grid Area -->

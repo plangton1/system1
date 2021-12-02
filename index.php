@@ -66,15 +66,15 @@
                             <!-- Start Single Category -->
                             <a href="?page=dash" class="single-cat">
                                 <div class="icon">
-                                    <img src="https://th.seaicons.com/wp-content/uploads/2015/11/document-add-icon.png" alt="#">
+                                    <img src="https://th.seaicons.com/wp-content/uploads/2015/06/Home-icon.png" alt="#">
                                 </div>
                                 <h3>หน้าแรก</h3>
 
                             <a href="?page=index" class="single-cat">
                                 <div class="icon">
-                                    <img src="https://th.seaicons.com/wp-content/uploads/2015/11/document-add-icon.png" alt="#">
+                                    <img src="https://studyinter.com/wp-content/uploads/2019/08/3-icon-%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A3.png" alt="#">
                                 </div>
-                                <h3>หน้าหลัก</h3>
+                                <h3>เอกสารทั้งหมด</h3>
                                 
 
                             <a href="?page=insert" class="single-cat">

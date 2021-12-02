@@ -168,7 +168,7 @@
 }
 
 .mg-l-menu2{
-  margin-left:400px;
+  margin-left:200px;
 }
 
 .s-ct{

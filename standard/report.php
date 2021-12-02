@@ -3,9 +3,17 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">รายงานเอกสาร</h2>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">กรุณาเลือกงานที่ต้องการ</h2>
                         <p class="wow fadeInUp" data-wow-delay=".6s"></p>
-                        <div class="  tab-content font">
+        
+            
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="  tab-content font">
         <div id="home" class="container-fluid tab-pane active m-2">
 <div class="container">
                 <div class="pd-t">
@@ -43,13 +51,7 @@
 
             </div>
                 </div>
-            </div>
-            
-                   
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </section>
 
-    </div>
+  
