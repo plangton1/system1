@@ -1,5 +1,5 @@
- <!-- Start Items Grid Area -->
- <section class="items-grid section custom-padding">
+  <!-- Start Items Grid Area -->
+  <section class="items-grid section custom-padding">
         <div class="">
             <div class="row">
                 <div class="col-12">

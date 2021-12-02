@@ -1,10 +1,14 @@
 <?php include('status_sql.php'); ?>
 <?php include('insert_status.php'); ?>
-<div class="tab-content font">
-    <div id="home" class="container-fluid tab-pane active m-2">
-        <div class="border rounded-2 border-2 bg-danger text-white ">
-            <h1 class="mg-t">แก้ไขสถานะเอกสาร มอก.</h1>
-        </div>
+<section class="items-grid section custom-padding">
+        <div class="">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">แก้ไขเอกสาร</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s"></p>
+                        <div class="  tab-content font">
+        <div id="home" class="container-fluid tab-pane active m-2">
         <form method="post">
             <table class="table table-bordered table-responsive-xl  text-center pt-5" style="width: 100%;" id="tableall">
                 <thead>
@@ -55,7 +59,15 @@
 </tbody>
 </table>
 </form>
-</div>
-</div>
 
+        </div>
+                </div>
+            </div>
+            
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 

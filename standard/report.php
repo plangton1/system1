@@ -1,9 +1,12 @@
-<div class="tab-content font">
-    <div id="home" class="container-fluid tab-pane active m-2">
-<div class="border rounded-2 border-2 bg-warning text-white">
-<h1 class="mg-t">รายงานเอกสาร </h1> 
-</div>
-
+<section class="items-grid section custom-padding">
+        <div class="">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">รายงานเอกสาร</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s"></p>
+                        <div class="  tab-content font">
+        <div id="home" class="container-fluid tab-pane active m-2">
 <div class="container">
                 <div class="pd-t">
                     <label> เลือกรูปแบบรายงานอัตโนมัติ </label>
@@ -36,9 +39,17 @@
                 <div class="">
                     <button type="submit" class="btn btn-danger bt mg-t-bt">พิมพ์รายงาน</button>
                 </div>
-            </center>
 
+
+            </div>
+                </div>
+            </div>
+            
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     </div>
-</div>
-</div>

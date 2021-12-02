@@ -1,5 +1,6 @@
-  <!-- Start Footer Area -->
-  <footer class="footer">
+
+    <!-- Start Footer Area -->
+    <footer class="footer">
         <!-- Start Footer Top -->
         <div class="footer-top">
             <div class="container">

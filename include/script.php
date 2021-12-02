@@ -3,7 +3,6 @@
     <script src="../system1/assets/assets/js/wow.min.js"></script>
     <script src="../system1/assets/assets/js/tiny-slider.js"></script>
     <script src="../system1/assets/assets/js/glightbox.min.js"></script>
-    <script type='text/javascript' src='https://code.jquery.com/jquery-1.12.4.min.js' crossorigin="anonymous"></script>
     <script src="../system1/assets/assets/js/main.js"></script>
     <script type="text/javascript">
         //========= Category Slider 

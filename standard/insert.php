@@ -1,9 +1,13 @@
-<?php include('insert_sql.php'); ?>
-<div class="tab-content font">
-    <div id="home" class="container-fluid tab-pane active m-2">
-        <div class="border rounded-2 border-2 bg-primary text-white ">
-            <h1 class="mg-t">เพิ่มเอกสารที่ยื่นขอ มอก.</h1>
-        </div>
+  <?php include('insert_sql.php'); ?>
+  <section class="items-grid section custom-padding">
+        <div class="">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">เพิ่มเอกสาร</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s"></p>
+                        <div class="  tab-content font">
+        <div id="home" class="container-fluid tab-pane active m-2">
         <form method="post">
             <table class="table table-responsive text-center pt-5"  id="myTable">
                 <thead>
@@ -120,3 +124,17 @@ function del_row(){
     document.getElementById("myTable").deleteRow(count_rows-1);
 }
 </script>
+
+
+
+
+            </div>
+                </div>
+            </div>
+            
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
