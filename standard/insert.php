@@ -87,29 +87,23 @@ function del_row(){
                         <td class="align-middle">
                             <select class="form-control" autocomplete="off" name="type_id" style="height: unset !important;">
                                 <option value="" selected disabled>ประเภทผลิตภัณฑ์</option>
-                                <?php while ($result = sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC)) {
-                                    $type_id = iconv("tis-620", "utf-8", $result["type_id"]);
-                                    $type_name = iconv("tis-620", "utf-8", $result["type_name"]); ?>
-                                    <option value="<?= $type_id ?>"><?= $type_name ?></option>
+                                <?php while ($result = sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC)) { ?>
+                                    <option value="<?= $result['type_id'] ?>"><?= $result['type_name'] ?></option>
                                 <?php } ?>
                             </select>
                         </td>
                         <td class="align-middle"><select class="form-control" name="group_id" style="height: unset !important;">
                                 <option value="" selected autocomplete="off" disabled>กลุ่มผลิตภัณฑ์</option>
-                                <?php while ($result = sqlsrv_fetch_array($query1, SQLSRV_FETCH_ASSOC)) {
-                                    $group_id = iconv("tis-620", "utf-8", $result["group_id"]);
-                                    $group_name = iconv("tis-620", "utf-8", $result["group_name"]); ?>
-                                    <option value="<?= $group_id ?>"><?= $group_name ?></option>
+                                <?php while ($result = sqlsrv_fetch_array($query1, SQLSRV_FETCH_ASSOC)) { ?>
+                                    <option value="<?= $result['group_id'] ?>"><?= $result['group_name'] ?></option>
                                 <?php } ?>
                             </select></td>
                         <td class="align-middle"><textarea type="text" class="form-control" name="standard_detail" required></textarea></td>
                         <td class="align-middle">
                             <select class="form-control" name="agency_id" autocomplete="off" style="height: unset !important;">
                                 <option value="" selected disabled>หน่วยงานที่สามารถทดสอบได้</option>
-                                <?php while ($result = sqlsrv_fetch_array($query2, SQLSRV_FETCH_ASSOC)) {
-                                    $agency_id = iconv("tis-620", "utf-8", $result["agency_id"]);
-                                    $agency_name = iconv("tis-620", "utf-8", $result["agency_name"]); ?>
-                                    <option value="<?= $agency_id ?>"><?= $agency_name ?></option>
+                                <?php while ($result = sqlsrv_fetch_array($query2, SQLSRV_FETCH_ASSOC)) { ?>
+                                    <option value="<?= $result['agency_id'] ?>"><?= $result['agency_name'] ?></option>
                                 <?php } ?>
                             </select>
                         </td>
@@ -117,10 +111,8 @@ function del_row(){
                         <td class="align-middle">
                             <select class="form-control" autocomplete="off" name="department_id" style="height: unset !important;">
                                 <option value="" selected disabled>หน่วยงานที่ขอ</option>
-                                <?php while ($result = sqlsrv_fetch_array($query3, SQLSRV_FETCH_ASSOC)) {
-                                    $department_id = iconv("tis-620", "utf-8", $result["department_id"]);
-                                    $department_name = iconv("tis-620", "utf-8", $result["department_name"]); ?>
-                                    <option value="<?= $department_id ?>"><?= $department_name ?></option>
+                                <?php while ($result = sqlsrv_fetch_array($query3, SQLSRV_FETCH_ASSOC)) { ?>
+                                    <option value="<?= $result['department_id'] ?>"><?= $result['department_name'] ?></option>
                                 <?php } ?>
                             </select>
                         </td>

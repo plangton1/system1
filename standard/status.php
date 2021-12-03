@@ -35,22 +35,15 @@
                 <tbody>
                     <?php $i = 1; ?>
                     <?php while ($data = sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC)) {
-                         $standard_meet = iconv("tis-620" , "utf-8" , $data["standard_meet"]);
-                         $standard_number = iconv("tis-620" , "utf-8" , $data["standard_number"]);
-                         $standard_detail = iconv("tis-620" , "utf-8" , $data["standard_detail"]);
-                         $name_agency = iconv("tis-620" , "utf-8" , $data["name_agency"]);
-                         $standard_mandatory = iconv("tis-620" , "utf-8" , $data["standard_mandatory"]);
-                         $department_name = iconv("tis-620" , "utf-8" , $data["department_name"]);
-                         $standard_meet = iconv("tis-620" , "utf-8" , $data["standard_meet"]);
                         ?>
                         <tr class="text-center">
                             <td class="align-middle"><?= $i++; ?></td>
-                            <td class="align-middle"><?=$standard_meet?></td>
-                            <td class="align-middle"><?=$standard_number?></td>
-                            <td class="align-middle"><?=$standard_detail?></td>
-                            <td class="align-middle"><?=$name_agency?></td>
-                            <td class="align-middle"><?=$standard_mandatory ?></td>
-                            <td class="align-middle"><?=$department_name?></td>
+                            <td class="align-middle"><?=$data['standard_meet']?></td>
+                            <td class="align-middle"><?=$data['standard_number']?></td>
+                            <td class="align-middle"><?=$data['standard_detail']?></td>
+                            <td class="align-middle"><?=$data['name_agency']?></td>
+                            <td class="align-middle"><?=$data['standard_mandatory'] ?></td>
+                            <td class="align-middle"><?=$data['department_name']?></td>
                             <td class="align-middle">
                                 <input type="date" class="form-control" name="progess_date"  required>
                             </td>
