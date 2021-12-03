@@ -1,5 +1,12 @@
 <?php
 if (isset($_POST) && !empty($_POST)) {
+    function utf8toThai($str){
+        return iconv('utf-8','tis-620',$str);
+    }
+    foreach($_POST as $key => $value){
+        eval(sprintf('$%s="%s";',$key,
+        utf8toThai($value)));
+    } 
 $sql11 ="INSERT INTO  progess(progess_date) values(?)";
 $params11 = array($progess_date);
 if(sqlsrv_query( $conn, $sql11, $params11)){

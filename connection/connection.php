@@ -4,7 +4,7 @@ $user = "pluem";
 $pass = "1234";
 
 
-$connectionInfo = array( "Database"=>"Project", "UID"=>$user, "PWD"=>$pass , "characterSet" => "UTF-8");
+$connectionInfo = array( "Database"=>"Project", "UID"=>$user, "PWD"=>$pass);
 $conn = sqlsrv_connect( $serverName, $connectionInfo);
 
 

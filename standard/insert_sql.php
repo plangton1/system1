@@ -4,6 +4,13 @@ $group_id = (isset($_GET['group_id'])) ? $_GET['group_id'] : '';
 $department_id = (isset($_GET['department_id'])) ? $_GET['department_id'] : '';
 $agency_id = (isset($_GET['agency_id'])) ? $_GET['agency_id'] : '';
 if (isset($_POST) && !empty($_POST)) {
+        function utf8toThai($str){
+            return iconv('utf-8','tis-620',$str);
+        }
+        foreach($_POST as $key => $value){
+            eval(sprintf('$%s="%s";',$key,
+            utf8toThai($value)));
+        } 
 $sql0 = "INSERT INTO standard_tb (standard_meet,standard_number,standard_detail,standard_mandatory,agency_id,department_id,type_id,group_id,standard_tacking,standard_note) VALUES (?,?,?,?,?,?,?,?,?,?)";
 $params = array($standard_meet,$standard_number,$standard_detail,$standard_mandatory,$agency_id,$department_id,$type_id,$group_id,$standard_tacking,$standard_note);
 if(sqlsrv_query( $conn, $sql0, $params)){
