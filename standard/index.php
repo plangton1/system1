@@ -1,16 +1,40 @@
-  <!-- Start Items Grid Area -->
-  <section class="items-grid section custom-padding">
-        <div class="">
+<?php
+$sql = "SELECT COUNT(standard_number) as count_standard FROM standard_tb";
+$query = sqlsrv_query($conn,$sql);
+?>
+ <section class="why-choose section">
+        <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title">
+                <div class="section-title">
                         <h2 class="wow fadeInUp" data-wow-delay=".4s">เอกสารทั้งหมด</h2>
                         <p class="wow fadeInUp" data-wow-delay=".6s"></p>
-                        <div class="  tab-content font">
+                    </div>  
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="choose-content">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <!-- Start Single List -->
+                                <div class="single-list wow fadeInUp" data-wow-delay=".2s">
+                                    <i class="lni lni-book"></i>
+                                    <?php while ($result = sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC)) : ?>
+                                    <h4>จำนวนเอกสารทั้งหมด</h4>
+                                    <p><?=$result['count_standard']?></p>
+                                    <?php endwhile;?>
+                                </div>
+                                <!-- Start Single List -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<hr>
+        <div class="  tab-content font">
         <div id="home" class="container-fluid tab-pane active m-2">
-            <!-- <div class="border rounded-2 border-2 bg-info text-white ">
-                <h1 class="mg-t ">เอกสารที่ยื่นขอ มอก. ทั้งหมด</h1>
-            </div> -->
             <table class="table table-striped ">
     <thead>
       <tr>
@@ -68,11 +92,6 @@
                     </div>
                 </div>
             </div>
-            
-                   
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <!-- /End Items Grid Area -->
+    

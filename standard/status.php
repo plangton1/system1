@@ -5,12 +5,19 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">แก้ไขเอกสาร</h2>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">แก้ไขสถานะเอกสาร</h2>
                         <p class="wow fadeInUp" data-wow-delay=".6s"></p>
-                        <div class="  tab-content font">
+                      
+            
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="  tab-content font">
         <div id="home" class="container-fluid tab-pane active m-2">
         <form method="post">
-            <table class="table table-bordered table-responsive-xl  text-center pt-5" style="width: 100%;" id="tableall">
+            <table class="table table-bordered table-responsive-xl table-striped  text-center pt-5" style="width: 100%;" id="tableall">
                 <thead>
                     <tr>
                         <th>ลำดับที่</th>
@@ -28,22 +35,15 @@
                 <tbody>
                     <?php $i = 1; ?>
                     <?php while ($data = sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC)) {
-                         $standard_meet = iconv("tis-620" , "utf-8" , $data["standard_meet"]);
-                         $standard_number = iconv("tis-620" , "utf-8" , $data["standard_number"]);
-                         $standard_detail = iconv("tis-620" , "utf-8" , $data["standard_detail"]);
-                         $name_agency = iconv("tis-620" , "utf-8" , $data["name_agency"]);
-                         $standard_mandatory = iconv("tis-620" , "utf-8" , $data["standard_mandatory"]);
-                         $department_name = iconv("tis-620" , "utf-8" , $data["department_name"]);
-                         $standard_meet = iconv("tis-620" , "utf-8" , $data["standard_meet"]);
                         ?>
                         <tr class="text-center">
                             <td class="align-middle"><?= $i++; ?></td>
-                            <td class="align-middle"><?=$standard_meet?></td>
-                            <td class="align-middle"><?=$standard_number?></td>
-                            <td class="align-middle"><?=$standard_detail?></td>
-                            <td class="align-middle"><?=$name_agency?></td>
-                            <td class="align-middle"><?=$standard_mandatory ?></td>
-                            <td class="align-middle"><?=$department_name?></td>
+                            <td class="align-middle"><?=$data['standard_meet']?></td>
+                            <td class="align-middle"><?=$data['standard_number']?></td>
+                            <td class="align-middle"><?=$data['standard_detail']?></td>
+                            <td class="align-middle"><?=$data['name_agency']?></td>
+                            <td class="align-middle"><?=$data['standard_mandatory'] ?></td>
+                            <td class="align-middle"><?=$data['department_name']?></td>
                             <td class="align-middle">
                                 <input type="date" class="form-control" name="progess_date"  required>
                             </td>
@@ -62,12 +62,5 @@
 
         </div>
                 </div>
-            </div>
-            
-                   
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 

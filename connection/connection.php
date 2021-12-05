@@ -1,10 +1,10 @@
 <?php
-$serverName = "DESKTOP-R0ETL6G"; //LAPTOP-O7F4B0NM , DESKTOP-R0ETL6G
+$serverName = "PLUEMMER"; //LAPTOP-O7F4B0NM , DESKTOP-R0ETL6G
 $user = "pluem";
 $pass = "1234";
 
 
-$connectionInfo = array( "Database"=>"Project", "UID"=>$user, "PWD"=>$pass);
+$connectionInfo = array( "Database"=>"Project", "UID"=>$user, "PWD"=>$pass , "characterSet" => "UTF-8");
 $conn = sqlsrv_connect( $serverName, $connectionInfo);
 
 
