@@ -25,8 +25,8 @@ function add_row() {
     var cell10 = row.insertCell(9);
     var cell11 = row.insertCell(10);
     var cell12 = row.insertCell(11);
-<?php $i=1; ?>
-    cell1.innerHTML = "<input type='text'   "+count_rows+" value='<?= $i++?>'>";
+<?php $i=2; ?>
+    cell1.innerHTML = "<p "+count_rows+" '><?= $i++?></p>";
     cell2.innerHTML = "<input type='text' name='standard_meet'"+count_rows+" value>";
     cell3.innerHTML = "<input type='text' name='standard_number'"+count_rows+" value>";
     cell4.innerHTML = "<input type='text' name='txtB'"+count_rows+" value>";

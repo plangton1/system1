@@ -64,6 +64,11 @@
                     <div class="col-12 p-0">
                         <div class="category-slider">
                             <!-- Start Single Category -->
+                            <a href="?page=dash" class="single-cat">
+                                <div class="icon">
+                                    <img src="https://th.seaicons.com/wp-content/uploads/2015/06/Home-icon.png" alt="#">
+                                </div>
+                                <h3>หน้าแรก</h3>
 
                             <a href="?page=index" class="single-cat">
                                 <div class="icon">

@@ -34,7 +34,8 @@
                 </thead>
                 <tbody>
                     <?php $i = 1; ?>
-                    <?php while ($data = sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC)) { ?>
+                    <?php while ($data = sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC)) {
+                        ?>
                         <tr class="text-center">
                             <td class="align-middle"><?= $i++; ?></td>
                             <td class="align-middle"><?=$data['standard_meet']?></td>
