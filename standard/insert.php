@@ -26,6 +26,7 @@ function add_row() {
     var cell11 = row.insertCell(10);
     var cell12 = row.insertCell(11);
 <?php $i=2; ?>
+
     cell1.innerHTML = "<p "+count_rows+" '><?= $i++?></p>";
     cell2.innerHTML = "<input type='text' name='standard_meet'"+count_rows+" value>";
     cell3.innerHTML = "<input type='text' name='standard_number'"+count_rows+" value>";
@@ -38,6 +39,7 @@ function add_row() {
     cell10.innerHTML = "<input type='text' name='standard_tracking'"+count_rows+" value>";
     cell11.innerHTML = "<input type='text' name='standard_note'"+count_rows+" value>";
     cell12.innerHTML = "<input type='file' name='txtB'"+count_rows+" value>";
+    $i++;
 }
 
 

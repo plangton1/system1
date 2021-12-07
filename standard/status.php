@@ -49,7 +49,7 @@
                             </td>
                             <td class="align-middle">
                                 <div class="mb-4">
-                                    <a href="?page=<?= $_GET['page'] ?>&function=update&standard_id=<?=$standard_id?>" class="btn btn-sm btn-warning">แก้ไขสถานะ</a>
+                                    <a href="?page=<?= $_GET['page'] ?>&function=update&standard_id=<?=$standard_id?>" class="btn btn-sm btn-warning">รายงานสถานะ</a>
                             </td>
                             <td class="align-middle"> 
                                 <input type="text" class="form-control" name="name_real"  required>

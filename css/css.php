@@ -132,9 +132,9 @@
   }
 
   .logo{
-  width:100px;
-    height:100px;
-    margin-bottom:15px;
+  width:50px;
+    height:150px;
+    margin-bottom:;
    
 }
 

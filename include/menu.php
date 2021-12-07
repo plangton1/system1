@@ -6,7 +6,7 @@
                     <div class="nav-inner">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="index.php">
-                                <img src="https://www2.tistr.or.th/tistrservices/training/images/logo2.png" alt="Logo"  >
+                                <img src="https://www2.tistr.or.th/tistrservices/training/images/logo2.png" alt="Logo" class="logo" >
                             </a>
                             <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
